@@ -6,3 +6,7 @@ Email: <input type="text">  <br>
 DataPrenotazione: <input type="text">  <br>
 OraPrenotazione: <input type="text">   <br>
 <button>Salva</button>
+
+@for(preno of vettPrenotazioni; track preno){
+  <app-lista-prenotazioni [pren]="preno"></app-lista-prenotazioni>
+}
